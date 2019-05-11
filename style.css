@@ -1,0 +1,73 @@
+/* 
+
+BREAKPOINTS
+
+0-600px: Phone
+600px - 900px: Tablet portrait
+900px - 1200px: Tablet landscape
+
+(1200px - 1800px) is where normal styles apply
+
+>= 1800px: Big desktop
+
+$BREAKPOINT ARGUMENT CHOICES
+
+- phone
+- tab-port
+- tab-land
+- desk-big
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+
+@media (min-width: 112.5em) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 75em) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
